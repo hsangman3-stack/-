@@ -118,11 +118,11 @@ const About: React.FC = () => {
               <MapPin className="text-sage mb-6" size={48} />
               <h3 className="text-2xl font-bold mb-8 text-stone-800">오시는 길</h3>
               <div className="space-y-6 text-stone-600 text-sm">
-                <p className="font-bold text-lg text-stone-800">서울특별시 강남구 테헤란로 123, 3층</p>
+                <p className="font-bold text-lg text-stone-800">충청북도 청주시 북문로</p>
                 <div className="text-left space-y-2 bg-ivory/50 p-4 rounded-2xl">
-                  <p>• <strong>지하철:</strong> 2호선 역삼역 4번 출구 도보 3분</p>
-                  <p>• <strong>버스:</strong> 역삼역.포스코타워 정류장 하차</p>
-                  <p>• <strong>주차:</strong> 건물 지하 주차장 무료 이용 가능</p>
+                  <p>• <strong>위치:</strong> 청주시 북문로 인근</p>
+                  <p>• <strong>대중교통:</strong> 인근 버스 정류장 이용</p>
+                  <p>• <strong>주차:</strong> 한의원 전용 주차장 완비</p>
                 </div>
                 <button className="bg-sage text-white px-8 py-4 rounded-2xl font-bold mt-4 w-full shadow-lg hover:bg-[#5d6b2e] transition-all">네이버 지도 보기</button>
               </div>

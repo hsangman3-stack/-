@@ -25,7 +25,7 @@ const Footer: React.FC = () => {
             <div className="space-y-6 text-stone-400 text-sm">
               <div className="flex items-start gap-4">
                 <MapPin className="mt-1 flex-shrink-0 text-sage" size={20} />
-                <span className="leading-relaxed">서울특별시 강남구 테헤란로 123 <br />진심빌딩 3층 (주차 무료)</span>
+                <span className="leading-relaxed">충청북도 청주시 북문로 <br />(한의원 전용 주차장 완비)</span>
               </div>
               <div className="flex items-center gap-4">
                 <Phone className="flex-shrink-0 text-sage" size={20} />
@@ -48,7 +48,7 @@ const Footer: React.FC = () => {
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-stone-500 text-[11px] tracking-wider">
           <div className="text-center md:text-left">
             <p>© 2024 강대근한의원. All rights reserved. | 대표: 강대근 | 사업자번호: 123-45-67890</p>
-            <p className="mt-1">의료법을 준수하여 작성되었습니다. | 주소: 서울시 강남구 테헤란로 123</p>
+            <p className="mt-1">의료법을 준수하여 작성되었습니다. | 주소: 청주시 북문로</p>
           </div>
           <Link to="/admin" className="flex items-center gap-2 text-stone-500 hover:text-white transition-all bg-white/5 px-4 py-2 rounded-lg">
             <Settings size={14} /> 관리자
