@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold serif-font text-sage">강대근 한의원</span>
+            <span className="text-2xl font-bold serif-font text-sage tracking-tight">강대근 한의원</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -45,11 +45,10 @@ const Header: React.FC = () => {
               <span>02.1234.5678</span>
             </a>
             <button className="bg-sage text-white px-6 py-2 rounded-full text-sm font-semibold hover:bg-[#5d6b2e] transition-all shadow-md">
-              예약하기
+              실시간 예약
             </button>
           </div>
 
-          {/* Mobile Menu Toggle */}
           <button className="md:hidden text-stone-600" onClick={() => setIsMenuOpen(!isMenuOpen)}>
             {isMenuOpen ? <X size={28} /> : <Menu size={28} />}
           </button>
@@ -65,16 +64,18 @@ const Header: React.FC = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-lg font-medium px-4 py-2 rounded-lg ${
-                  isActive(link.path) ? 'bg-warm-beige text-sage' : 'text-stone-600'
+                  isActive(link.path) ? 'bg-warm-beige text-sage' : 'text-stone- stone-600'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >
                 {link.name}
               </Link>
             ))}
-            <button className="bg-sage text-white w-full py-3 rounded-lg font-bold">
-              간편 예약하기
-            </button>
+            <div className="pt-4 border-t border-warm-beige">
+              <button className="bg-sage text-white w-full py-4 rounded-xl font-bold">
+                네이버 예약하기
+              </button>
+            </div>
           </div>
         </div>
       )}

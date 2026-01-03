@@ -1,120 +1,158 @@
 
 import React from 'react';
-import { Calendar, Heart, ShieldCheck, ArrowRight, Star } from 'lucide-react';
+import { Calendar, Heart, ShieldCheck, ArrowRight, Star, MessageSquare, Quote } from 'lucide-react';
 import { Link } from 'react-router-dom';
+import { useContent } from '../context/ContentContext';
 
 const Home: React.FC = () => {
+  const { testimonials } = useContent();
+
   return (
     <div className="animate-in fade-in duration-700">
       {/* Hero Section */}
-      <section className="relative h-[80vh] flex items-center overflow-hidden">
+      <section className="relative h-[90vh] flex items-center overflow-hidden">
         <div className="absolute inset-0 z-0">
           <img 
-            src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?auto=format&fit=crop&q=80&w=2000" 
+            src="https://images.unsplash.com/photo-1505576399279-565b52d4ac71?auto=format&fit=crop&q=80&w=2000" 
             alt="Oriental Clinic Background" 
-            className="w-full h-full object-cover opacity-80"
+            className="w-full h-full object-cover opacity-90 scale-105"
           />
-          <div className="absolute inset-0 bg-gradient-to-r from-ivory via-ivory/60 to-transparent"></div>
+          <div className="absolute inset-0 bg-gradient-to-r from-[#FAF9F6] via-[#FAF9F6]/70 to-transparent"></div>
         </div>
         
         <div className="relative z-10 max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 w-full">
-          <div className="max-w-xl">
-            <h2 className="text-sage font-bold mb-4 tracking-wider">따뜻한 마음으로 빚은 치유</h2>
-            <h1 className="text-5xl md:text-6xl serif-font leading-tight mb-6">
-              당신의 아픔을 <br />
-              <span className="text-sage">진심</span>으로 마주합니다
+          <div className="max-w-2xl fade-in-up">
+            <h2 className="text-sage font-bold mb-4 tracking-widest flex items-center gap-3">
+              <span className="w-10 h-[1px] bg-sage"></span>
+              사람을 향한 진심어린 치유
+            </h2>
+            <h1 className="text-6xl md:text-8xl serif-font leading-[1.1] mb-8 text-stone-800">
+              <span className="text-sage">강대근</span> 한의원
             </h1>
-            <p className="text-lg text-stone-600 mb-10 leading-relaxed">
-              차가운 기계보다 따뜻한 손길로, <br />
-              증상만이 아닌 당신의 마음까지 살피는 진료를 약속합니다.
+            <p className="text-xl md:text-2xl text-stone-600 mb-12 leading-relaxed font-light">
+              증상을 넘어 당신의 삶을 이해합니다. <br />
+              따뜻한 한약 냄새가 마음까지 어루만지는 곳.
             </p>
             <div className="flex flex-wrap gap-4">
-              <button className="bg-sage text-white px-8 py-4 rounded-full text-lg font-bold shadow-lg hover:translate-y-[-2px] transition-all">
-                네이버 예약하기
+              <button className="bg-sage text-white px-10 py-5 rounded-full text-lg font-bold shadow-2xl hover:bg-[#5d6b2e] hover:translate-y-[-3px] transition-all flex items-center gap-2">
+                네이버 예약 <ArrowRight size={20} />
               </button>
-              <Link to="/about" className="bg-white text-stone-700 px-8 py-4 rounded-full text-lg font-bold border border-warm-beige hover:bg-stone-50 transition-all flex items-center gap-2">
-                한의원 둘러보기 <ArrowRight size={20} />
+              <a href="https://pf.kakao.com" target="_blank" rel="noreferrer" className="bg-[#FEE500] text-[#3c1e1e] px-10 py-5 rounded-full text-lg font-bold shadow-lg hover:translate-y-[-3px] transition-all flex items-center gap-2">
+                <MessageSquare size={20} fill="currentColor" /> 카톡 상담
+              </a>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Core Values with Images */}
+      <section className="py-24 bg-white">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="text-center mb-20">
+            <h2 className="text-4xl serif-font mb-4 text-stone-800">강대근 한의원의 3가지 약속</h2>
+            <div className="w-12 h-1 bg-sage mx-auto"></div>
+          </div>
+          <div className="grid md:grid-cols-3 gap-8">
+            <div className="group rounded-[2.5rem] overflow-hidden bg-ivory border border-warm-beige hover:shadow-2xl transition-all">
+              <div className="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1512290923902-8a9f81dc2069?auto=format&fit=crop&q=80&w=800" alt="정성 진료" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <div className="p-10">
+                <Heart className="text-sage mb-4" size={32} />
+                <h3 className="text-2xl font-bold mb-4 serif-font">정성 어린 진료</h3>
+                <p className="text-stone-500 text-sm leading-relaxed">환자 한 분 한 분의 목소리에 깊이 공감하며 통증의 뿌리를 찾아냅니다.</p>
+              </div>
+            </div>
+            <div className="group rounded-[2.5rem] overflow-hidden bg-ivory border border-warm-beige hover:shadow-2xl transition-all">
+              <div className="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1563483783225-bc53ad978511?auto=format&fit=crop&q=80&w=800" alt="청정 약재" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <div className="p-10">
+                <ShieldCheck className="text-sage mb-4" size={32} />
+                <h3 className="text-2xl font-bold mb-4 serif-font">투명한 한약재</h3>
+                <p className="text-stone-500 text-sm leading-relaxed">우리아이도 안심하고 먹을 수 있는 GAP 인증 청정 약재만을 고집합니다.</p>
+              </div>
+            </div>
+            <div className="group rounded-[2.5rem] overflow-hidden bg-ivory border border-warm-beige hover:shadow-2xl transition-all">
+              <div className="h-48 overflow-hidden">
+                <img src="https://images.unsplash.com/photo-1519824145371-296894a0daa9?auto=format&fit=crop&q=80&w=800" alt="편안한 공간" className="w-full h-full object-cover group-hover:scale-110 transition-transform duration-500" />
+              </div>
+              <div className="p-10">
+                <Calendar className="text-sage mb-4" size={32} />
+                <h3 className="text-2xl font-bold mb-4 serif-font">환자 중심 시스템</h3>
+                <p className="text-stone-500 text-sm leading-relaxed">대기 시간을 최소화하고 진료에 집중할 수 있는 편안한 환경을 제공합니다.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      {/* Director Philosophy Section */}
+      <section className="py-24 bg-ivory/50">
+        <div className="max-w-7xl mx-auto px-4">
+          <div className="flex flex-col lg:flex-row items-center gap-16">
+            <div className="lg:w-1/2 relative">
+               <div className="absolute -top-10 -left-10 text-sage/10">
+                <Quote size={160} />
+              </div>
+              <img 
+                src="https://images.unsplash.com/photo-1622253692010-333f2da6031d?auto=format&fit=crop&q=80&w=800" 
+                alt="강대근 원장" 
+                className="rounded-[3rem] shadow-2xl relative z-10 w-full object-cover aspect-[4/5]"
+              />
+              <div className="absolute -bottom-6 -right-6 bg-sage text-white p-8 rounded-3xl shadow-xl z-20">
+                <p className="serif-font text-2xl mb-1">강대근</p>
+                <p className="text-xs opacity-80 uppercase tracking-widest">대표원장 / 한의학박사</p>
+              </div>
+            </div>
+            <div className="lg:w-1/2">
+              <h2 className="text-4xl serif-font mb-8 text-stone-800 leading-tight">
+                "치료의 기술보다 중요한 것은 <br />환자를 향한 진실한 마음입니다."
+              </h2>
+              <div className="space-y-6 text-stone-600 leading-loose font-light text-lg">
+                <p>
+                  안녕하십니까, 강대근 한의원 원장 강대근입니다. 
+                  우리가 겪는 통증은 몸이 보내는 SOS 신호이자, 삶의 균형이 잠시 흐트러졌음을 알리는 목소리입니다.
+                </p>
+                <p>
+                  저는 환자분들을 뵐 때 단순히 '어디가 아프신가요?'를 넘어 '무엇이 당신의 일상을 힘들게 하나요?'를 고민합니다. 
+                  마음의 응어리가 몸의 병이 되기도 하기에, 따뜻한 대화와 세심한 진찰로 치유를 시작합니다.
+                </p>
+                <p className="font-medium text-sage">
+                  내 가족을 치료한다는 고집스러운 원칙으로, 정직하고 바르게 진료하겠습니다.
+                </p>
+              </div>
+              <Link to="/about" className="inline-flex items-center gap-2 mt-10 text-stone-800 font-bold border-b-2 border-sage pb-1 hover:text-sage transition-colors">
+                원장님 스토리 더보기 <ArrowRight size={18} />
               </Link>
             </div>
           </div>
         </div>
       </section>
 
-      {/* Core Values */}
-      <section className="py-20 bg-white">
-        <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl serif-font mb-16">강대근 한의원만의 3가지 약속</h2>
-          <div className="grid md:grid-cols-3 gap-12">
-            <div className="p-8 rounded-3xl bg-ivory border border-warm-beige hover:shadow-xl transition-all">
-              <div className="bg-sage/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Heart className="text-sage" size={32} />
-              </div>
-              <h3 className="text-xl font-bold mb-4">정성 어린 진료</h3>
-              <p className="text-stone-500 leading-relaxed">
-                바쁜 진료 시간에 쫓기지 않고 환자 한 분 한 분의 목소리에 귀를 기울입니다.
-              </p>
-            </div>
-            <div className="p-8 rounded-3xl bg-ivory border border-warm-beige hover:shadow-xl transition-all">
-              <div className="bg-sage/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <ShieldCheck className="text-sage" size={32} />
-              </div>
-              <h3 className="text-xl font-bold mb-4">투명한 한약재</h3>
-              <p className="text-stone-500 leading-relaxed">
-                GAP 인증을 받은 엄선된 청정 약재만을 사용하여 원내에서 직접 조제합니다.
-              </p>
-            </div>
-            <div className="p-8 rounded-3xl bg-ivory border border-warm-beige hover:shadow-xl transition-all">
-              <div className="bg-sage/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
-                <Calendar className="text-sage" size={32} />
-              </div>
-              <h3 className="text-xl font-bold mb-4">환자 중심 시스템</h3>
-              <p className="text-stone-500 leading-relaxed">
-                복잡한 절차 없이 모바일로 간편하게 예약하고 대기 시간을 최소화합니다.
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
-
-      {/* Process Infographic */}
-      <section className="py-20 bg-warm-beige/30">
+      {/* Testimonials */}
+      <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <div className="text-center mb-16">
-            <h2 className="text-3xl serif-font mb-4">처음 오시는 분을 위한 진료 과정</h2>
-            <p className="text-stone-500">불안함은 덜고, 신뢰는 더하는 진심의 4단계</p>
+          <div className="flex justify-between items-end mb-16">
+            <div>
+              <h2 className="text-4xl serif-font text-stone-800">나아진 일상의 기록</h2>
+              <p className="text-stone-500 mt-2">환자분들이 전해주신 진심 어린 후기입니다.</p>
+            </div>
+            <Link to="/community" className="text-sage font-bold hover:underline">전체보기</Link>
           </div>
-          <div className="flex flex-col md:flex-row items-center justify-between gap-8 relative">
-            <div className="hidden md:block absolute top-1/2 left-0 w-full h-0.5 bg-sage/20 -z-10"></div>
-            {[
-              { step: '01', title: '심층 상담', desc: '불편한 부위와 평소 생활 습관을 면밀히 파악합니다.' },
-              { step: '02', title: '정밀 검사', desc: '체성분, 스트레스 검사 등을 통해 몸의 상태를 확인합니다.' },
-              { step: '03', title: '맞춤 치료', desc: '침, 약침, 물리치료 등 최적의 치료를 진행합니다.' },
-              { step: '04', title: '처방 및 관리', desc: '필요 시 한약 처방과 함께 생활 관리법을 안내합니다.' }
-            ].map((item, idx) => (
-              <div key={idx} className="flex flex-col items-center bg-white p-8 rounded-2xl shadow-sm border border-warm-beige w-full md:w-64">
-                <span className="text-sage font-bold text-lg mb-4">{item.step}</span>
-                <h4 className="text-xl font-bold mb-2">{item.title}</h4>
-                <p className="text-sm text-stone-500 text-center">{item.desc}</p>
-              </div>
-            ))}
-          </div>
-        </div>
-      </section>
-
-      {/* Quick Testimonial Slider Preview */}
-      <section className="py-20 bg-white overflow-hidden">
-        <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-3xl serif-font mb-12 text-center">환자분들이 전해주신 진심</h2>
-          <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {[1, 2, 3].map((i) => (
-              <div key={i} className="bg-ivory p-6 rounded-2xl border border-warm-beige relative">
-                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
-                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
-                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
-                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
-                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
-                <p className="text-stone-600 mb-4 italic">"원장님이 정말 친절하게 상담해주셔서 마음까지 치료받는 기분이었습니다. 허리 통증도 금방 좋아졌어요."</p>
-                <span className="text-sm text-stone-400">- 김OO 환자님</span>
+          <div className="grid md:grid-cols-3 gap-8">
+            {testimonials.map((t, i) => (
+              <div key={i} className="bg-ivory p-10 rounded-[2.5rem] border border-warm-beige relative hover:shadow-2xl transition-all h-full flex flex-col">
+                <div className="flex gap-1 mb-6 text-yellow-500">
+                  {[1, 2, 3, 4, 5].map((s) => (
+                    <Star key={s} fill="currentColor" size={16} />
+                  ))}
+                </div>
+                <p className="text-stone-700 mb-8 italic leading-loose font-light flex-grow">"{t.text}"</p>
+                <div className="flex items-center gap-3 mt-auto">
+                   <div className="w-6 h-[1px] bg-sage"></div>
+                   <span className="text-xs font-bold text-stone-500">{t.author}</span>
+                </div>
               </div>
             ))}
           </div>
