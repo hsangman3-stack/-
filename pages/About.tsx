@@ -17,13 +17,13 @@ const About: React.FC = () => {
                 <span className="w-6 h-px bg-sage"></span>
                 Philosophy
               </h2>
-              <h3 className="text-5xl serif-font mb-10 leading-tight text-stone-800">
+              <h3 className="text-5xl mb-10 leading-tight text-stone-800">
                 기본에 충실한 진료, <br />
-                강대근 한의원의 고집입니다.
+                강대근한의원의 고집입니다.
               </h3>
               <div className="space-y-6 text-stone-600 leading-loose text-lg font-light">
                 <p>
-                  안녕하십니까. 강대근 한의원 원장 강대근입니다. 
+                  안녕하십니까. 강대근한의원 원장 강대근입니다. 
                   우리가 겪는 통증은 몸의 신호일 뿐만 아니라, 그간 고생해온 우리 삶의 기록이기도 합니다.
                 </p>
                 <p>
@@ -70,7 +70,7 @@ const About: React.FC = () => {
       {/* Facility Gallery */}
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
-          <h2 className="text-4xl serif-font mb-16 text-center">편안한 치유의 공간</h2>
+          <h2 className="text-4xl mb-16 text-center">편안한 치유의 공간</h2>
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-6">
             <div className="lg:col-span-2 lg:row-span-2 rounded-[2rem] overflow-hidden shadow-lg h-full">
               <img src="https://images.unsplash.com/photo-1519494026892-80bbd2d6fd0d?auto=format&fit=crop&q=80&w=1200" className="w-full h-full object-cover" alt="Reception" />
@@ -97,7 +97,7 @@ const About: React.FC = () => {
           <div className="grid md:grid-cols-2 gap-10">
             <div className="bg-white p-12 rounded-[3rem] border border-warm-beige flex flex-col items-center text-center shadow-sm">
               <Clock className="text-sage mb-6" size={48} />
-              <h3 className="text-2xl font-bold mb-8 serif-font text-stone-800">진료 시간</h3>
+              <h3 className="text-2xl font-bold mb-8 text-stone-800">진료 시간</h3>
               <div className="space-y-4 w-full text-stone-600">
                 <div className="flex justify-between border-b border-warm-beige pb-2">
                   <span>평 일</span>
@@ -116,7 +116,7 @@ const About: React.FC = () => {
             </div>
             <div className="bg-white p-12 rounded-[3rem] border border-warm-beige flex flex-col items-center text-center shadow-sm">
               <MapPin className="text-sage mb-6" size={48} />
-              <h3 className="text-2xl font-bold mb-8 serif-font text-stone-800">오시는 길</h3>
+              <h3 className="text-2xl font-bold mb-8 text-stone-800">오시는 길</h3>
               <div className="space-y-6 text-stone-600 text-sm">
                 <p className="font-bold text-lg text-stone-800">서울특별시 강남구 테헤란로 123, 3층</p>
                 <div className="text-left space-y-2 bg-ivory/50 p-4 rounded-2xl">

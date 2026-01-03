@@ -21,7 +21,7 @@ const Header: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex justify-between items-center h-20">
           <Link to="/" className="flex items-center space-x-2">
-            <span className="text-2xl font-bold serif-font text-sage tracking-tight">강대근 한의원</span>
+            <span className="text-2xl font-bold text-sage tracking-tight">강대근한의원</span>
           </Link>
 
           {/* Desktop Nav */}
@@ -64,7 +64,7 @@ const Header: React.FC = () => {
                 key={link.path}
                 to={link.path}
                 className={`text-lg font-medium px-4 py-2 rounded-lg ${
-                  isActive(link.path) ? 'bg-warm-beige text-sage' : 'text-stone- stone-600'
+                  isActive(link.path) ? 'bg-warm-beige text-sage' : 'text-stone-600'
                 }`}
                 onClick={() => setIsMenuOpen(false)}
               >

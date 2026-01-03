@@ -9,7 +9,7 @@ const Footer: React.FC = () => {
       <div className="max-w-7xl mx-auto px-4">
         <div className="grid md:grid-cols-4 gap-12 mb-20">
           <div className="col-span-1 md:col-span-2">
-            <h2 className="text-3xl serif-font font-bold mb-8">강대근 한의원</h2>
+            <h2 className="text-3xl font-bold mb-8">강대근한의원</h2>
             <p className="text-stone-400 max-w-sm mb-10 leading-relaxed font-light">
               증상보다는 사람을, 기술보다는 진심을 먼저 생각합니다. <br />
               당신의 건강한 일상을 위해 묵묵히 곁을 지키겠습니다.
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
         
         <div className="pt-10 border-t border-white/5 flex flex-col md:flex-row justify-between items-center gap-6 text-stone-500 text-[11px] tracking-wider">
           <div className="text-center md:text-left">
-            <p>© 2024 강대근 한의원. All rights reserved. | 대표: 강대근 | 사업자번호: 123-45-67890</p>
+            <p>© 2024 강대근한의원. All rights reserved. | 대표: 강대근 | 사업자번호: 123-45-67890</p>
             <p className="mt-1">의료법을 준수하여 작성되었습니다. | 주소: 서울시 강남구 테헤란로 123</p>
           </div>
           <Link to="/admin" className="flex items-center gap-2 text-stone-500 hover:text-white transition-all bg-white/5 px-4 py-2 rounded-lg">

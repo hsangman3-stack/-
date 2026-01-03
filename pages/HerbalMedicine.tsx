@@ -11,8 +11,8 @@ const HerbalMedicine: React.FC = () => {
         <div className="absolute inset-0 bg-stone-900/40"></div>
         <div className="relative z-10 text-center text-white px-4">
           <h2 className="text-sage font-bold mb-4 uppercase tracking-[0.3em] text-sm">Our Tradition</h2>
-          <h3 className="text-5xl md:text-7xl serif-font mb-6">정성을 달이는 시간</h3>
-          <p className="text-lg md:text-xl font-light opacity-90">강대근 한의원의 한약은 자연의 생명력을 그대로 담습니다.</p>
+          <h3 className="text-5xl md:text-7xl mb-6">정성을 달이는 시간</h3>
+          <p className="text-lg md:text-xl font-light opacity-90">강대근한의원의 한약은 자연의 생명력을 그대로 담습니다.</p>
         </div>
       </section>
 
@@ -37,7 +37,7 @@ const HerbalMedicine: React.FC = () => {
                   <Leaf size={36} />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold mb-3 serif-font">엄격한 산지 관리</h4>
+                  <h4 className="text-2xl font-bold mb-3">엄격한 산지 관리</h4>
                   <p className="text-stone-500 text-lg leading-relaxed font-light">
                     전국의 청정 지역에서 자란 GAP 인증 약재만을 엄선합니다. 자연의 기운이 가장 좋을 때 채취한 약재가 최고의 효능을 발휘합니다.
                   </p>
@@ -48,7 +48,7 @@ const HerbalMedicine: React.FC = () => {
                   <Microscope size={36} />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold mb-3 serif-font">철저한 성분 검사</h4>
+                  <h4 className="text-2xl font-bold mb-3">철저한 성분 검사</h4>
                   <p className="text-stone-500 text-lg leading-relaxed font-light">
                     잔류 농약, 중금속 검사를 통과한 의약품용 규격 약재만을 사용하여, 우리 아이에게도 안심하고 먹일 수 있는 안전을 담습니다.
                   </p>
@@ -59,7 +59,7 @@ const HerbalMedicine: React.FC = () => {
                   <Thermometer size={36} />
                 </div>
                 <div>
-                  <h4 className="text-2xl font-bold mb-3 serif-font">정성이 깃든 조제</h4>
+                  <h4 className="text-2xl font-bold mb-3">정성이 깃든 조제</h4>
                   <p className="text-stone-500 text-lg leading-relaxed font-light">
                     약재마다 다른 최적의 추출 온도와 시간을 준수합니다. 서두르지 않고 묵묵히 기다리는 시간 속에 진정한 효능이 배어납니다.
                   </p>

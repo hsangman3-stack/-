@@ -26,8 +26,8 @@ const Home: React.FC = () => {
               <span className="w-10 h-[1px] bg-sage"></span>
               사람을 향한 진심어린 치유
             </h2>
-            <h1 className="text-6xl md:text-8xl serif-font leading-[1.1] mb-8 text-stone-800">
-              <span className="text-sage">강대근</span> 한의원
+            <h1 className="text-6xl md:text-8xl leading-[1.1] mb-8 text-stone-800">
+              <span className="text-sage">강대근</span>한의원
             </h1>
             <p className="text-xl md:text-2xl text-stone-600 mb-12 leading-relaxed font-light">
               증상을 넘어 당신의 삶을 이해합니다. <br />
@@ -49,7 +49,7 @@ const Home: React.FC = () => {
       <section className="py-24 bg-white">
         <div className="max-w-7xl mx-auto px-4">
           <div className="text-center mb-20">
-            <h2 className="text-4xl serif-font mb-4 text-stone-800">강대근 한의원의 3가지 약속</h2>
+            <h2 className="text-4xl mb-4 text-stone-800">강대근한의원의 3가지 약속</h2>
             <div className="w-12 h-1 bg-sage mx-auto"></div>
           </div>
           <div className="grid md:grid-cols-3 gap-8">
@@ -59,7 +59,7 @@ const Home: React.FC = () => {
               </div>
               <div className="p-10">
                 <Heart className="text-sage mb-4" size={32} />
-                <h3 className="text-2xl font-bold mb-4 serif-font">정성 어린 진료</h3>
+                <h3 className="text-2xl font-bold mb-4">정성 어린 진료</h3>
                 <p className="text-stone-500 text-sm leading-relaxed">환자 한 분 한 분의 목소리에 깊이 공감하며 통증의 뿌리를 찾아냅니다.</p>
               </div>
             </div>
@@ -69,7 +69,7 @@ const Home: React.FC = () => {
               </div>
               <div className="p-10">
                 <ShieldCheck className="text-sage mb-4" size={32} />
-                <h3 className="text-2xl font-bold mb-4 serif-font">투명한 한약재</h3>
+                <h3 className="text-2xl font-bold mb-4">투명한 한약재</h3>
                 <p className="text-stone-500 text-sm leading-relaxed">우리아이도 안심하고 먹을 수 있는 GAP 인증 청정 약재만을 고집합니다.</p>
               </div>
             </div>
@@ -79,7 +79,7 @@ const Home: React.FC = () => {
               </div>
               <div className="p-10">
                 <Calendar className="text-sage mb-4" size={32} />
-                <h3 className="text-2xl font-bold mb-4 serif-font">환자 중심 시스템</h3>
+                <h3 className="text-2xl font-bold mb-4">환자 중심 시스템</h3>
                 <p className="text-stone-500 text-sm leading-relaxed">대기 시간을 최소화하고 진료에 집중할 수 있는 편안한 환경을 제공합니다.</p>
               </div>
             </div>
@@ -101,17 +101,17 @@ const Home: React.FC = () => {
                 className="rounded-[3rem] shadow-2xl relative z-10 w-full object-cover aspect-[4/5]"
               />
               <div className="absolute -bottom-6 -right-6 bg-sage text-white p-8 rounded-3xl shadow-xl z-20">
-                <p className="serif-font text-2xl mb-1">강대근</p>
+                <p className="text-2xl mb-1">강대근</p>
                 <p className="text-xs opacity-80 uppercase tracking-widest">대표원장 / 한의학박사</p>
               </div>
             </div>
             <div className="lg:w-1/2">
-              <h2 className="text-4xl serif-font mb-8 text-stone-800 leading-tight">
+              <h2 className="text-4xl mb-8 text-stone-800 leading-tight">
                 "치료의 기술보다 중요한 것은 <br />환자를 향한 진실한 마음입니다."
               </h2>
               <div className="space-y-6 text-stone-600 leading-loose font-light text-lg">
                 <p>
-                  안녕하십니까, 강대근 한의원 원장 강대근입니다. 
+                  안녕하십니까, 강대근한의원 원장 강대근입니다. 
                   우리가 겪는 통증은 몸이 보내는 SOS 신호이자, 삶의 균형이 잠시 흐트러졌음을 알리는 목소리입니다.
                 </p>
                 <p>
@@ -135,7 +135,7 @@ const Home: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4">
           <div className="flex justify-between items-end mb-16">
             <div>
-              <h2 className="text-4xl serif-font text-stone-800">나아진 일상의 기록</h2>
+              <h2 className="text-4xl text-stone-800">나아진 일상의 기록</h2>
               <p className="text-stone-500 mt-2">환자분들이 전해주신 진심 어린 후기입니다.</p>
             </div>
             <Link to="/community" className="text-sage font-bold hover:underline">전체보기</Link>

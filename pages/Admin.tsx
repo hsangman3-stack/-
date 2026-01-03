@@ -62,7 +62,7 @@ const Admin: React.FC = () => {
             <div className="bg-sage/10 p-6 rounded-full mb-6 text-sage">
               <Lock size={48} />
             </div>
-            <h2 className="text-3xl font-bold serif-font text-stone-800">관리자 시스템</h2>
+            <h2 className="text-3xl font-bold text-stone-800">관리자 시스템</h2>
             <p className="text-stone-500 mt-2">포트폴리오 수정을 위해 비밀번호를 입력하세요.</p>
           </div>
           <div className="space-y-6">
@@ -93,7 +93,7 @@ const Admin: React.FC = () => {
               <LayoutDashboard size={32} />
             </div>
             <div>
-              <h1 className="text-3xl serif-font font-bold text-stone-800">한의원 관리 모드</h1>
+              <h1 className="text-3xl font-bold text-stone-800">한의원 관리 모드</h1>
               <p className="text-stone-500 text-sm">진료 과목 포트폴리오 및 환자 후기를 실시간으로 수정합니다.</p>
             </div>
           </div>
@@ -111,7 +111,7 @@ const Admin: React.FC = () => {
             <div className="flex justify-between items-center mb-10 pb-6 border-b border-warm-beige">
               <div className="flex items-center gap-3">
                 <FileEdit className="text-sage" size={28} />
-                <h2 className="text-2xl font-bold text-stone-800 serif-font">진료 과목 포트폴리오</h2>
+                <h2 className="text-2xl font-bold text-stone-800">진료 과목 포트폴리오</h2>
               </div>
               <button 
                 onClick={addTreatment}
@@ -133,7 +133,7 @@ const Admin: React.FC = () => {
                     <div className="space-y-2">
                       <label className="text-[10px] font-black text-sage uppercase tracking-tighter">진료 과목명</label>
                       <input 
-                        className="w-full text-2xl font-bold bg-transparent border-b-2 border-warm-beige focus:border-sage outline-none py-2 text-stone-800 serif-font"
+                        className="w-full text-2xl font-bold bg-transparent border-b-2 border-warm-beige focus:border-sage outline-none py-2 text-stone-800"
                         value={t.title}
                         onChange={(e) => updateTreatment(i, 'title', e.target.value)}
                         placeholder="과목 제목"
@@ -169,7 +169,7 @@ const Admin: React.FC = () => {
             <div className="flex justify-between items-center mb-10 pb-6 border-b border-warm-beige">
                <div className="flex items-center gap-3">
                 <CheckCircle2 className="text-sage" size={28} />
-                <h2 className="text-2xl font-bold text-stone-800 serif-font">환자 후기 관리</h2>
+                <h2 className="text-2xl font-bold text-stone-800">환자 후기 관리</h2>
               </div>
               <button 
                 onClick={addTestimonial}
