@@ -1,0 +1,7 @@
+{
+  "name": "Sincere Oriental Medicine Clinic",
+  "description": "A warm, trust-building web application for an Oriental Medicine Clinic focusing on patient care, traditional expertise, and modern convenience.",
+  "requestFramePermissions": [
+    "geolocation"
+  ]
+}
