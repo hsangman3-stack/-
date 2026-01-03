@@ -2,11 +2,8 @@
 import React from 'react';
 import { Calendar, Heart, ShieldCheck, ArrowRight, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { useContent } from '../context/ContentContext';
 
 const Home: React.FC = () => {
-  const { testimonials } = useContent();
-
   return (
     <div className="animate-in fade-in duration-700">
       {/* Hero Section */}
@@ -46,7 +43,7 @@ const Home: React.FC = () => {
       {/* Core Values */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 text-center">
-          <h2 className="text-3xl serif-font mb-16">진심 한의원만의 3가지 약속</h2>
+          <h2 className="text-3xl serif-font mb-16">강대근 한의원만의 3가지 약속</h2>
           <div className="grid md:grid-cols-3 gap-12">
             <div className="p-8 rounded-3xl bg-ivory border border-warm-beige hover:shadow-xl transition-all">
               <div className="bg-sage/10 w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-6">
@@ -104,20 +101,20 @@ const Home: React.FC = () => {
         </div>
       </section>
 
-      {/* Testimonial Slider Preview */}
+      {/* Quick Testimonial Slider Preview */}
       <section className="py-20 bg-white overflow-hidden">
         <div className="max-w-7xl mx-auto px-4">
           <h2 className="text-3xl serif-font mb-12 text-center">환자분들이 전해주신 진심</h2>
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-6">
-            {testimonials.map((t, i) => (
+            {[1, 2, 3].map((i) => (
               <div key={i} className="bg-ivory p-6 rounded-2xl border border-warm-beige relative">
-                <div className="flex gap-1 mb-4">
-                  {[1, 2, 3, 4, 5].map((s) => (
-                    <Star key={s} className="text-yellow-500" fill="currentColor" size={16} />
-                  ))}
-                </div>
-                <p className="text-stone-600 mb-4 italic">"{t.text}"</p>
-                <span className="text-sm text-stone-400">- {t.author}</span>
+                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
+                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
+                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
+                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
+                <Star className="text-yellow-500 mb-4 inline-block" fill="currentColor" size={16} />
+                <p className="text-stone-600 mb-4 italic">"원장님이 정말 친절하게 상담해주셔서 마음까지 치료받는 기분이었습니다. 허리 통증도 금방 좋아졌어요."</p>
+                <span className="text-sm text-stone-400">- 김OO 환자님</span>
               </div>
             ))}
           </div>

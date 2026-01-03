@@ -1,7 +1,6 @@
 
 import React from 'react';
-import { MapPin, Phone, MessageSquare, Instagram, Settings } from 'lucide-react';
-import { Link } from 'react-router-dom';
+import { MapPin, Phone, MessageSquare, Instagram } from 'lucide-react';
 
 const Footer: React.FC = () => {
   return (
@@ -37,22 +36,17 @@ const Footer: React.FC = () => {
           <div>
             <h3 className="font-bold mb-6">Sitemap</h3>
             <ul className="space-y-2 text-stone-400 text-sm">
-              <li><Link to="/about" className="hover:text-white transition-colors">한의원 소개</Link></li>
-              <li><Link to="/treatments" className="hover:text-white transition-colors">진료 과목</Link></li>
-              <li><Link to="/herbs" className="hover:text-white transition-colors">한약 이야기</Link></li>
-              <li><Link to="/community" className="hover:text-white transition-colors">커뮤니티</Link></li>
+              <li><a href="#/about" className="hover:text-white transition-colors">한의원 소개</a></li>
+              <li><a href="#/treatments" className="hover:text-white transition-colors">진료 과목</a></li>
+              <li><a href="#/herbs" className="hover:text-white transition-colors">한약 이야기</a></li>
+              <li><a href="#/community" className="hover:text-white transition-colors">커뮤니티</a></li>
             </ul>
           </div>
         </div>
         
-        <div className="pt-8 border-t border-white/10 flex flex-col md:flex-row justify-between items-center gap-4 text-stone-500 text-xs text-center md:text-left">
-          <div>
-            <p>© 2024 진심 한의원. All rights reserved. | 대표: 홍길동 | 사업자번호: 123-45-67890</p>
-            <p className="mt-2">의료법을 준수하여 작성되었습니다.</p>
-          </div>
-          <Link to="/admin" className="flex items-center gap-1 text-stone-500 hover:text-white transition-colors">
-            <Settings size={14} /> 관리자 메뉴
-          </Link>
+        <div className="pt-8 border-t border-white/10 text-center text-stone-500 text-xs">
+          <p>© 2024 진심 한의원. All rights reserved. | 대표: 홍길동 | 사업자번호: 123-45-67890</p>
+          <p className="mt-2">의료법을 준수하여 작성되었습니다.</p>
         </div>
       </div>
     </footer>
